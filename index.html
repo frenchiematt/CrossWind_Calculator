@@ -661,7 +661,7 @@ const dirSign = magVar >= 0 ? "W" : "E";
     	`<span class="icao-code">${airport.city} - </span><span class="city-name">${icao}</span>`;
     document.getElementById("target-ac").textContent = currentProfile;
     document.getElementById("mag-var-note").textContent =
-        `Applied Magnetic Variation ${Math.abs(magVar)}°${dirSign} | Calculated Magnetic Wind ${magWind.toFixed(0)}°`;
+        `Applied Magnetic Variation ${Math.abs(magVar)}°${dirSign}  | Calculated Magnetic Wind ${magWind.toFixed(0)}°`;
 
     const tbody = document.getElementById("results-table-body");
     tbody.innerHTML = "";
